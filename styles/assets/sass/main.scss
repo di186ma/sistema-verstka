@@ -19,6 +19,18 @@ main {
 			left: 0;
 		}
 
+		.promo_size-picture {
+			width: 400px;
+
+			@media screen and (max-width: 801.98px) {
+				width: 350px;
+			}
+
+			@media screen and (max-width: 767.98px) {
+				width: 300px;
+			}
+		}
+
 		.promo__picture {
 			max-width: 400px;
 
@@ -28,19 +40,6 @@ main {
 
 			@media screen and (max-width: 767.98px) {
 				max-width: 270px;
-			}
-		}
-
-		.promo__right {
-			width: 400px;
-			text-align: right;
-
-			@media screen and (max-width: 801.98px) {
-				width: 350px;
-			}
-
-			@media screen and (max-width: 767.98px) {
-				width: 300px;
 			}
 		}
 	}
@@ -67,17 +66,8 @@ main {
 			}
 		}
 
-		.promo__right {
-			width: 400px;
+		.promo_location-right {
 			text-align: right;
-
-			@media screen and (max-width: 801.98px) {
-				width: 350px;
-			}
-
-			@media screen and (max-width: 767.98px) {
-				width: 300px;
-			}
 		}
 	}
 
@@ -89,16 +79,11 @@ main {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-		}
-
-		.promo__center {
-
+			text-align: center;
 		}
 	}
 
-
-
-	.str {
+	.info {
 		padding-top: 20px;
 		display: flex;
 		align-items: center;
@@ -109,7 +94,7 @@ main {
 			justify-content: center;
 		}
 
-		.str__category {
+		.info__category {
 			width: 200px;
 
 			@media screen and (max-width: 767.98px) {
@@ -124,7 +109,7 @@ main {
 				align-items: center;
 			}
 
-			ul {
+			.info__list {
 				@media screen and (max-width: 575.98px) {
 					width: 95%;
 					display: flex;
@@ -135,10 +120,8 @@ main {
 			}
 		}
 
-		.str__news {
-			margin-left: auto;
+		.info__news {
 			width: 600px;
-			line-height: 1.2;
 
 			@media screen and (max-width: 801.98px) {
 				width: 500px;
@@ -149,19 +132,26 @@ main {
 			}
 
 			@media screen and (max-width: 575.98px) {
-				margin-left: 0;
 				width: 95%;
 			}
 
-			.str__news_title {
+			.info__title {
 				justify-content: center;
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 
-				img{
-					margin-left: 20px;
+				.info_size-picture {
 					height: 50px;
+					width: 100px;
+				}
+
+				.info_location-picture{
+					text-align: right;
+				}
+
+				.info__picture {
+					max-height: 50px;
 				}
 			}
 		}
