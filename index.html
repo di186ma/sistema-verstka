@@ -12,47 +12,44 @@
     <title>Чатикс</title>
 </head>
 
-<body>
+<body class="page">
 <header class="header">
-    <div class="header__container container">
-        <div class="header__menu">
-            <div class="header__up">
-                <a href="" class="header__up_logo">
-                    <img src="img/socials.png" class="logo" alt="socials"/>
-                </a>
-                <form class="header__up_form form">
-                    <input type="search" class="header__up_search search" name="search "/>
-                    <button class="header__up_button button">Поиск</button>
-                </form>
+    <div class="wrapper">
+        <div class="header__up">
+            <a href="#">
+                <img src="img/socials.png" class="logo" alt="socials"/>
+            </a>
+            <form class="header__form search-form">
+                <input type="search" class="header__search search-form__input" name="search "/>
+                <button class="header__button button">Поиск</button>
+            </form>
 
-                <a href="" class="header__up_tel-icon">
-                    <img src="img/tel.png" class="tel-icon" alt="tel"/>
-                </a>
-                <a class="header__up_tel-numb" href="tel:+78005353535">+7 (800) 535-35-35</a>
-            </div>
-
-            <div class="header__down">
-                <ul class="header__down_list">
-                    <li class="header__down_item">
-                        <a href="">Новости</a>
-                    </li>
-                    <li class="header__down_item">
-                        <a href="">Общение</a>
-                    </li>
-                    <li class="header__down_item">
-                        <a href="">Помощь</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="tel:+78005353535" class="header__tel-icon link">
+                <img src="img/tel.png" class="tel-icon" alt="tel"/>
+            </a>
+            <a class="header__tel-numb link" href="tel:+78005353535">+7 (800) 535-35-35</a>
         </div>
 
-
+        <div class="header__down">
+            <ul class="header__menu-list list">
+                <li class="header__menu-item list__item">
+                    <a href="" class="link">Новости</a>
+                </li>
+                <li class="header__menu-item list__item">
+                    <a href="" class="link">Общение</a>
+                </li>
+                <li class="header__menu-item list__item">
+                    <a href="" class="link">Помощь</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
+
 <main class="main">
-    <div class="main__container container">
-        <div class="main__promo-1 promo">
-            <div class="promo__text">
+    <div class="wrapper">
+        <div class="main__promo-desktop promo">
+            <div class="promo__left text_more-height">
                 <h3>
                     Добрые новости!
                 </h3>
@@ -63,17 +60,17 @@
                     <br><br>Прочитайте наши новости и убедитесь сами!
                 </p>
             </div>
-            <div class="promo__img">
-                <img src="img/cat.png" class="img" alt="">
+            <div class="promo__right">
+                <img src="img/cat.png" class="promo__picture picture" alt="">
             </div>
         </div>
 
-        <div class="main__promo-2 promo">
+        <div class="main__promo-mobile promo">
             <h3>
                 Добрые новости!
             </h3>
-            <div class="promo__img">
-                <img src="img/cat.png" class="img" alt="">
+            <div class="promo__center">
+                <img src="img/cat.png" class="promo__picture promo__picture" alt="">
             </div>
             <p>
                 У нас на сайте вы не найдете плохих новостей.
@@ -91,24 +88,24 @@
                 <h3>
                     Наши категории:
                 </h3>
-                <ul class="str__category_list">
+                <ul class="str__category_list list">
                     <li class="str__category_item">
-                        <a href="">Коты</a>
+                        <a href="" class="link">Коты</a>
                     </li>
                     <li class="str__category_item">
-                        <a href="">Хвосты</a>
+                        <a href="" class="link">Хвосты</a>
                     </li>
                     <li class="str__category_item">
-                        <a href="">И остальное</a>
+                        <a href="" class="link">И остальное</a>
                     </li>
                 </ul>
             </div>
             <div class="str__news">
-                <div class="str__news_title">
+                <div class="str__title">
                     <h3>
                         Поговорим о пчёлах
                     </h3>
-                    <img src="img/bee.png" class="img" alt="">
+                    <img src="img/bee.png" class="picture picture_title" alt="">
                 </div>
                 <p>
                     Согласно последнему отчету эколгов из Швейцарии, инновационные методы ухода за пчелами, разработанные в рамках многостороннего сотрудничества между учеными, пчеловодами и правительственными агентствами, привели к улучшению ситуации с этими поллинизаторами.
@@ -120,17 +117,17 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__container container">
+    <div class="wrapper footer__wrapper">
         <div class="footer__column-1">
-            <ul class="footer__column-1_list">
+            <ul class="footer__column-1_list list">
                 <li class="footer__column-1_item">
-                    <a href="">Предложить новость</a>
+                    <a href="" class="link">Предложить новость</a>
                 </li>
                 <li class="footer__column-1_item">
-                    <a href="">Поддержка</a>
+                    <a href="" class="link">Поддержка</a>
                 </li>
                 <li class="footer__column-1_item">
-                    <a href="tel:+78005353535">+7 (800) 535-35-35</a>
+                    <a href="tel:+78005353535" class="link">+7 (800) 535-35-35</a>
                 </li>
             </ul>
         </div>

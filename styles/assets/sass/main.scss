@@ -4,28 +4,6 @@ main {
 	display: flex;
 	justify-content: center;
 
-
-	.main__promo-1 {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-
-		@media screen and (max-width: 575.98px) {
-			display: none;
-		}
-	}
-
-	.main__promo-2 {
-		display: none;
-
-		@media screen and (max-width: 575.98px) {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-	}
-
 	.promo {
 		position: relative;
 		padding-bottom: 20px;
@@ -41,40 +19,84 @@ main {
 			left: 0;
 		}
 
-		.promo__text {
+		.promo__picture {
+			max-width: 400px;
+
 			@media screen and (max-width: 801.98px) {
-				width: 330px;
+				max-width: 330px;
+			}
+
+			@media screen and (max-width: 767.98px) {
+				max-width: 270px;
+			}
+		}
+
+		.promo__right {
+			width: 400px;
+			text-align: right;
+
+			@media screen and (max-width: 801.98px) {
+				width: 350px;
+			}
+
+			@media screen and (max-width: 767.98px) {
+				width: 300px;
+			}
+		}
+	}
+
+	.main__promo-desktop {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		@media screen and (max-width: 575.98px) {
+			display: none;
+		}
+
+		.promo__left {
+			flex-wrap: wrap;
+			width: 500px;
+
+			@media screen and (max-width: 801.98px) {
+				width:350px;
 			}
 
 			@media screen and (max-width: 767.98px) {
 				width:270px;
 			}
-
-			flex-wrap: wrap;
-			width: 400px;
-			line-height: 1.2;
 		}
 
-		.promo__img {
-			margin-left: auto;
+		.promo__right {
+			width: 400px;
+			text-align: right;
 
-			@media screen and (max-width: 575.98px) {
-				margin-left: 0;
+			@media screen and (max-width: 801.98px) {
+				width: 350px;
 			}
 
-			img{
-				width: 400px;
-
-				@media screen and (max-width: 801.98px) {
-					width: 330px;
-				}
-
-				@media screen and (max-width: 767.98px) {
-					width: 270px;
-				}
+			@media screen and (max-width: 767.98px) {
+				width: 300px;
 			}
 		}
 	}
+
+	.main__promo-mobile {
+		display: none;
+
+		@media screen and (max-width: 575.98px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.promo__center {
+
+		}
+	}
+
+
 
 	.str {
 		padding-top: 20px;
